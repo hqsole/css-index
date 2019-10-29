@@ -1,0 +1,416 @@
+
+
+/*版心*/
+.w{
+    width: 1190px;
+    margin: 0 auto;
+}
+.fr{
+    float: right;
+}
+.fl{
+    float: left;
+}
+.style-red{
+    color: #f10215!important;
+}
+li{
+    list-style: none;
+}
+ul{
+    margin: 0;
+    padding: 0;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+input,button{
+    margin: 0;
+    border: 0;
+}
+/*京东顶部start*/
+.j_event {
+    height: 80px;
+    background-color: #000;
+}
+.j_event a{
+    display: block;
+    height: 80px;
+    background: url("../images/header.jpg");
+    position: relative;
+}
+.j_event a i{
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    right: 0;
+    top: 5px;
+    font-family: "icomoon";
+    font-style: normal;
+    line-height: 20px;
+    text-align: center;
+    color: #fff;
+}
+a{
+    text-decoration: none;
+}
+img {
+   text-decoration: none;      /*去除图片底侧缝隙  图片和文字基线对齐*/
+}
+.clearfix:before, .clearfix:after{    /*清除浮动*/
+    content: "";
+    display: table;
+}
+.clearfix:after{
+    clear: both;
+}
+.clearfix{
+    *zoom:1;
+}
+@font-face {  /*声明字体  引用字体*/
+    font-family: "icomoon";  /*我们自己起名字可以*/
+    src:  url('../fonts/icomoon.eot?7kkyc2');
+    src:  url('../fonts/icomoon.eot?7kkyc2#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon.ttf?7kkyc2') format('truetype'),
+    url('../fonts/icomoon.woff?7kkyc2') format('woff'),
+    url('../fonts/icomoon.svg?7kkyc2#icomoon') format('svg');
+    font-style: normal;  /*倾斜字体正常*/
+}
+/*京东顶部end*/
+body{
+    background-color: #f6f6f6;
+}
+/*快捷导航栏模块制作开始*/
+.shortcut{
+    height: 30px;
+    line-height: 30px;
+    background-color: #e3e4e5;
+    border-bottom: 1px solid #dddddd;
+    color: #9d9d9d;
+}
+.shortcut a{
+    font-size: 12px;
+    color: #9d9d9d;
+    text-decoration: none;
+}
+.pos{
+    font-family: "icomoon";
+    font-style: normal;
+    font-size: 14px;
+    color: #f10215;
+}
+.shortcut .fl li{
+    margin-left: 200px;
+}
+.shortcut .fr li{
+    float: left;
+}
+a:hover{
+    color: #f10215;
+}
+.spacer{
+    width: 1px;
+    height: 10px;
+    background-color: #ccc;
+    margin: 10px 10px 0;
+}
+.dropdown{
+    padding-right: 15px;
+    position: relative;
+}
+.dropdown i{
+    font-family: "icomoon";
+    font-style: normal;
+    font-size:14px;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+.erweima{
+    width: 60px;
+    height: 60px;
+    border: 1px solid #ccc;
+    padding: 3px;
+    position: absolute;
+    left: -8px;
+    top: 30px;
+    z-index: 1;
+}
+/*快捷导航栏模块制作结束*/
+/*header 部分开始*/
+.header{
+    height: 140px;
+    position: relative;
+}
+.inner{
+    height: 140px;
+    position: relative;
+}
+.logo{
+    width: 190px;
+    height: 170px;
+    position: absolute;
+    left: 0;
+    top: -31px;
+}
+.logo h1{
+    margin: 0;
+}
+.logo a{
+    display: block;
+    width: 190px;
+    height: 170px;
+    background: #fff url("../images/logo.png") no-repeat;
+    text-indent: -999em;
+    overflow: hidden;
+    box-shadow: 0 -12px 10px rgba(0,0,0,.2);
+}
+.search{
+    width: 550px;
+    height: 35px;
+    background-color: pink;
+    position: absolute;
+    top: 25px;
+    left: 320px;
+}
+.search input{
+    width: 493px;
+    height: 33px;
+    border: 1px solid #f10215;
+    padding: 0 0 0 5px;
+    outline: none;  /*取消蓝色边框*/
+    color:#989898;
+    float: left;
+}
+.search button{
+    width: 50px;
+    height: 35px;
+    background-color: #f10215;
+    float: left;
+    cursor: pointer;
+    outline: none;
+}
+.search i{
+    font-family: icomoon;
+    color: #fff;
+    font-style: normal;
+    font-size: 16px;
+}
+.search em{
+    position: absolute;
+    top: 10px;
+    right: 65px;
+    width: 19px;
+    height: 15px;
+    cursor: pointer;
+    background :url("../images/sprite-photo-search.png") no-repeat;
+}
+.search em:hover{
+    background-position: -30px 0;
+}
+.hotwords{
+    position: absolute;
+    top: 70px;
+    left: 320px;
+}
+.hotwords a{
+    color: #9e9b99;
+    font-size: 12px;
+}
+.hotwords a:hover{
+    color: #f10215;
+}
+.myCar{
+    width: 188px;
+    height: 33px;
+    border: 1px solid #ccc;
+    position: absolute;
+    top: 25px;
+    right: 100px;
+    text-align: center;
+    line-height: 33px;
+    background-color: #fff;
+}
+.myCar a{
+    font-size: 14px;
+    color: #f10215;
+}
+.myCar i{
+    font-family: "icomoon";
+    font-style: normal;
+    color: #f10215;
+    margin-right: 3px;
+}
+.myCar s{
+    position: absolute;
+    top: 5px;
+    left: 145px;
+    text-decoration: none;
+    background-color: #f10215;
+    height: 16px;
+    line-height: 16px;
+    font-size: 12px;
+    padding: 0 3px;
+    border-radius: 7px;
+    color: #fff;
+}
+.computer{
+    position: absolute;
+    right: 0;
+    bottom: 10px;
+}
+.navitems{
+    position: absolute;
+    left: 200px;
+    bottom: 0;
+}
+.navitems ul{
+    float: left;
+}
+.navitems ul li{
+    float: left;
+    margin-left: 30px;
+}
+.navitems li a{
+    font-size: 16px;
+    color: #555a5f;
+    font-weight: 700;
+    height: 40px;
+    line-height: 40px;
+    display: block;
+}
+.navitems li a:hover{
+    color:#f10215;
+}
+.navitems .spacer{
+    float: left;
+    margin-top: 15px;
+    margin-left: 20px;
+    margin-right: -10px;
+}
+    /*header 部分end*/
+    /*footer部分开始*/
+.footer{
+    height: 560px;
+    background-color: #eaeaea;
+}
+.footer-service{
+    height: 100px;
+    border-bottom: 1px solid #ddd;
+}
+.footer-service-inner{
+    padding: 30px 0;
+}
+.footer-service-inner li{
+    float: left;
+    width: 297px;
+    height: 42px;
+}
+.service-unit{
+    width: 225px;
+    height: 42px;
+    margin: 0 auto;
+    position: relative;
+}
+.service-unit h5{
+    width: 36px;
+    height: 42px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: url("../images/ico.png")no-repeat;
+    text-indent: -999px;
+}
+.service-unit p{
+    line-height: 42px;
+    margin-left: 45px;
+    font-size: 18px;
+    font-weight: 700;
+}
+.service-unit .kuai{
+    background-position: 0 -42px;
+}
+.service-unit .hao{
+    background-position: 0 -86px;
+}
+.service-unit .sheng{
+    background-position: 0 -128px;
+}
+.help{
+    height: 198px;
+    padding-top: 20px;
+}
+.help dl{
+    float: left;
+    width: 198px;
+}
+.help dt{
+    font-size: 14px;
+    font-weight: 700;
+    color: #666;
+    height: 30px;
+}
+.help dd a{
+    color: #727272;
+    font-size: 12px;
+    height: 22px;
+}
+.help dd:hover{
+    color: #f10215;
+}
+.help .cover{
+    float: right;
+    width: 200px;
+    height: 150px;
+    background: url("../images/ico_footer.png")no-repeat;
+}
+.cover dt{
+    text-align: center;
+}
+.help .info{
+    width: 175px;
+    height: 50px;
+    font-size: 12px;
+    margin-top: 5px;
+    margin-left: 10px;
+    line-height: 18px;
+    color: #727272;
+}
+.more{
+    text-align: right;
+    padding-right: 10px;
+}
+.copyright{
+    border-top: 1px solid #ccc;
+    padding-top: 15px;
+}
+.links a{
+    color: #727272;
+    font-size: 12px;
+}
+.links span{
+    font-size: 12px;
+    color:#d4cdcd;
+}
+.c-info{
+    font-size: 12px;
+    color: #9e9e9b;
+    text-align: center;
+    line-height: 20px;
+    margin-top: 10px;
+}
+.tupian{
+    text-align: center;
+    margin-top: 10px;
+}
+.tupian a{
+    width: 103px;
+    height: 32px;
+    display: inline-block;
+    background: url("../images/ico_footer.png")no-repeat 0 -151px;
+}
+.tupian .kexin{
+    background-position: -104px -151px;
+}
